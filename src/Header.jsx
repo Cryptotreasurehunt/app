@@ -127,9 +127,6 @@ export default function Header({
           e.preventDefault();
           e.stopPropagation();
           
-          // setPage('input');
-          // setInput('');
-          // setNeedsFocus(true);
           setOpen('magicMenu');
         }
         return true;
