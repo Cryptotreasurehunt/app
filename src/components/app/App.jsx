@@ -4,8 +4,9 @@ import React, { useState, useEffect, useRef } from 'react';
 // import MagicMenu from '../../MagicMenu.jsx';
 import { defaultAvatarUrl } from '../../../constants';
 // import dropManager from '../../../drop-manager.js';
-import { ZoneTitleCard } from '../general/zone-title-card/ZoneTitleCard.jsx';
 import { IoHandler } from '../../IoHandler.jsx';
+import { ZoneTitleCard } from '../general/zone-title-card/ZoneTitleCard.jsx';
+import { MapGen } from '../general/map-gen/MapGen.jsx';
 
 import sceneNames from '../../../scenes/scenes.json';
 import { parseQuery } from '../../../util.js'
@@ -138,6 +139,7 @@ export const App = () => {
             <EditorMode selectedScene={ selectedScene } setSelectedScene={ setSelectedScene } selectedRoom={ selectedRoom } setSelectedRoom={ setSelectedRoom } />
             <IoHandler />
             <ZoneTitleCard app={ app } />
+            <MapGen app={ app } />
         </div>
     );
 
